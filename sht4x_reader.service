@@ -1,0 +1,17 @@
+# /etc/systemd/system/sht4x-reader.service
+[Unit]
+Description=SHT4x Temperature and Humidity Reader
+After=systemd-udev-settle.service
+Requires=systemd-udev-settle.service
+ConditionPathExists=/dev/sht4x
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sht4x_reader /dev/sht4x
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

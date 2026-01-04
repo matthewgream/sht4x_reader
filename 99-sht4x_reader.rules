@@ -1,0 +1,2 @@
+# Adafruit SHT4x Trinkey M0
+SUBSYSTEM=="tty", ATTRS{idVendor}=="239a", ATTRS{idProduct}=="8153", SYMLINK+="sht4x", MODE="0666"
