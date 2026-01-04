@@ -18,3 +18,25 @@ Jan 04 11:35:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=40297011
 Jan 04 11:36:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.09C, humidity=38.63%
 Jan 04 11:37:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.09C, humidity=38.56%
 Jan 04 11:38:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.06C, humidity=38.57%
+
+root@adsb:/opt/sht4x# lsusb -d 239a: -v|head -20
+
+Bus 001 Device 003: ID 239a:8153 Adafruit SHT4x Trinkey M0
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceSubClass         2
+  bDeviceProtocol         1 Interface Association
+  bMaxPacketSize0        64
+  idVendor           0x239a Adafruit
+  idProduct          0x8153
+  bcdDevice            1.00
+  iManufacturer           1 Adafruit
+  iProduct                2 SHT4x Trinkey M0
+  iSerial                 3 DB5C67145031344E432E3120FF161B42
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
