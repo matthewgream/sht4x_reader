@@ -1,0 +1,20 @@
+root@adsb:/opt/sht4x# systemctl status sht4x_reader
+● sht4x_reader.service - SHT4x Temperature and Humidity Reader
+     Loaded: loaded (/etc/systemd/system/sht4x_reader.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2025-09-27 10:39:16 UTC; 3 months 7 days ago
+   Main PID: 226 (sht4x_reader)
+      Tasks: 1 (limit: 473)
+        CPU: 1min 3.010s
+     CGroup: /system.slice/sht4x_reader.service
+             └─226 /usr/local/bin/sht4x_reader /dev/sht4x
+
+Jan 04 11:29:15 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.10C, humidity=38.81%
+Jan 04 11:30:15 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.10C, humidity=38.87%
+Jan 04 11:31:15 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.13C, humidity=38.79%
+Jan 04 11:32:15 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.10C, humidity=38.80%
+Jan 04 11:33:15 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.11C, humidity=38.69%
+Jan 04 11:34:15 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.14C, humidity=38.79%
+Jan 04 11:35:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.10C, humidity=38.71%
+Jan 04 11:36:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.09C, humidity=38.63%
+Jan 04 11:37:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.09C, humidity=38.56%
+Jan 04 11:38:16 adsb-ostratakenebranna sht4x_reader[226]: SHT4x: serial=4029701148, temperature=9.06C, humidity=38.57%
